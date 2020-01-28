@@ -2,8 +2,7 @@
 
 while true; do
   echo "Polling Bot"
-  cd /mastodon-bot
   npm start
   echo "Poll done, waiting 600 seconds"
-  sleep 600
+  sleep ${POLL_INTERVAL:-600}
 done
